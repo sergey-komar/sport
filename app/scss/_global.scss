@@ -5,8 +5,11 @@ body {
 	flex-direction: column;/*sticky footer*/
 	margin: 0;
 	scroll-behavior: smooth;
-	font-family: '';
+	font-family: 'Montserrat';
 	font-weight: 400;
+	color: #414042;
+	line-height: 1.5;
+	font-size: 1.6rem;
  }
 html{
 	font-size: 10px;
@@ -22,8 +25,47 @@ button{
 	cursor: pointer;
 }
 .container{
-	max-width: 137rem;
+	max-width: 135rem;
 	margin: 0 auto;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
+}
+a,
+button{
+	transition: all .4s ease-in;
+}
+a:hover,
+button:hover{
+	transition: all .4s ease-in;
+}
+.btn{
+	display: block;
+	text-align: center;
+	background: #35ae5d;
+	color: #fff;
+	border-radius: 16px;
+	font-size: 18px;
+	font-weight: 700;
+	transition: all .4s ease-in;
+}
+.btn:hover{
+	transition: all .4s ease-in;
+	background: #ffa532;
+}
+.title{
+	position: relative;
+	font-size: 4.8rem;
+	font-weight: 600;
+	line-height: 1.2;
+}
+.title::before{
+	position: absolute;
+	content: '';
+	width: 80px;
+	height: 8px;
+	left: 0;
+	bottom: -20px;
+	border-radius: 100px;
+	background: #35ae5d;
+	
 }

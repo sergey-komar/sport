@@ -10,10 +10,659 @@
 
 <body>
 
-  <header class="header"></header>
+  <header class="header">
+    
+      <div class="header-top">
+        <div class="container">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li>
+                <a href="#">Главная</a>
+              </li>
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Блог</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Оплата</a>
+              </li>
+              <li>
+                <a href="#">О нас</a>
+              </li>
+              <li>
+                <a  href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="header-bottom">
+          <a href="#" class="logo">
+            <img src="./images/home/header-logo.png" alt="img">
+          </a>
+          <div class="header-bottom__info">
+            <div class="header-bottom__cart">
+              <div class="header-bottom__cart-text">Корзина</div>
+              <a href="#" class="header-bottom__info-basket">
+                <img src="./images/home/basket.svg" alt="img" class="header-bottom__info-img">
+                <span class="cart-badge">3</span>
+              </a>
+            </div>
+           
+            <a href="tel:88005555555" class="header-bottom__info-phone">8 800 555-55-55</a>
+            <div class="header-bottom__info-text">Заказать звонок</div>
+          </div>
+        </div>
+      </div>
+  </header>
  
-    <main class="main"></main>
-    <footer class="footer"></footer>
+    <main class="main">
+      <section class="heading">
+        <div class="container">
+          <div class="heading-block">
+            <div class="heading-block__info">
+              <h1 class="heading-block__info-title">Здоровье и комфорт</h1>
+              <div class="heading-block__info-text">
+                Безопасные природные средства для здоровья всего организма
+              </div>
+              <a href="#" class="heading-block__info-link btn">Перейти к покупкам</a>
+              <button class="heading-block__info-btn">Скидки на первый заказ 30%</button>
+            </div>
+
+            <div class="heading-block__img">
+              <img src="./images/home/woman-img.png" alt="img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="health">
+        <div class="container">
+          <h3 class="health__title title">Все для вашего здоровья</h3>
+          <div class="health-block">
+            <div class="health-block__item">
+              <div class="health-block__item-img">
+                <img src="./images/home/health-1.svg" alt="img">
+              </div>
+              <div class="health-block__item-title">
+                100% натуральный состав
+              </div>
+              <div class="health-block__item-text">
+                В основе всех средств только природные вещества без каких-либо искусственных примесей.
+              </div>
+            </div>
+            <div class="health-block__item">
+              <div class="health-block__item-img">
+                <img src="./images/home/health-2.svg" alt="img">
+              </div>
+              <div class="health-block__item-title">
+                Бесплатный подбор средств
+              </div>
+              <div class="health-block__item-text">
+                Наши эксперты дают подробные консультации по выбору препаратов, профилактике и лечению болезней.
+              </div>
+            </div>
+            <div class="health-block__item">
+              <div class="health-block__item-img">
+                <img src="./images/home/health-3.svg" alt="img">
+              </div>
+              <div class="health-block__item-title">
+                Бесплатная доставка по всей РФ
+              </div>
+              <div class="health-block__item-text">
+                Вы получите продукцию в любом уголке страны, и вам не придется дополнительно оплачивать доставку.
+              </div>
+            </div>
+            <div class="health-block__item">
+              <div class="health-block__item-img">
+                <img src="./images/home/health-4.svg" alt="img">
+              </div>
+              <div class="health-block__item-title">
+                Возврат денег, если не будет эффекта
+              </div>
+              <div class="health-block__item-text">
+                Это наш гарант эффективности предлагаемой продукции.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="offer">
+        <div class="container">
+          <div class="offer__subtitle">Специальное</div>
+          <h3 class="offer__title">Специальное предложение</h3>
+          <div class="offer-block">
+            <div class="offer-block__item">
+              <div class="offer-block__item-title">Предложение дня</div>
+              <div class="offer-block__item-text">
+                <span>Скидка 20%</span>
+                на «Название продукта» до конца месяца!
+              </div>
+              <div class="offer-block__item-img">
+                <img src="./images/home/offer-img.jpg" alt="img">
+              </div>
+              <div class="offer-block__price">
+                <div class="offer-block__price-new">1000 ₽</div>
+                <div class="offer-block__price-old">1500 ₽</div>
+              </div>
+              <a href="#" class="offer-block__item-btn btn">Купить</a>
+            </div>
+            <div class="offer-block__item">
+              <div class="offer-block__item-title">Предложение дня</div>
+              <div class="offer-block__item-text">
+                <span>Скидка 20%</span>
+                на «Название продукта» до конца месяца!
+              </div>
+              <div class="offer-block__item-img">
+                <img src="./images/home/offer-img.jpg" alt="img">
+              </div>
+              <div class="timer">
+                <div class="timer__block">
+                    <span id="days">12</span>
+                    :
+                </div>
+                <div class="timer__block">
+                    <span id="hours">20</span>
+                   :
+                </div>
+                <div class="timer__block">
+                    <span id="minutes">56</span>
+                   :
+                </div>
+                <div class="timer__block">
+                    <span id="seconds">20</span>
+                    
+                </div>
+              </div>
+              <div class="offer-block__price">
+                <div class="offer-block__price-new">1000 ₽</div>
+                <div class="offer-block__price-old">1500 ₽</div>
+              </div>
+              
+              <a href="#" class="offer-block__item-btn btn">Купить</a>
+            </div>
+            <div class="offer-block__item">
+              <div class="offer-block__item-title">Предложение дня</div>
+              <div class="offer-block__item-text">
+                <span>Скидка 20%</span>
+                на «Название продукта» до конца месяца!
+              </div>
+              <div class="offer-block__item-img">
+                <img src="./images/home/offer-img.jpg" alt="img">
+              </div>
+              <div class="offer-block__price">
+                <div class="offer-block__price-new">1000 ₽</div>
+                <div class="offer-block__price-old">1500 ₽</div>
+              </div>
+              <a href="#" class="offer-block__item-btn btn">Купить</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="goods">
+        <div class="container">
+          <h3 class="goods__title title">Товары для вас</h3>
+          <div class="goods__category">
+            <a href="#" class="goods__category-link">Все</a>
+            <a href="#" class="goods__category-link">Натуральная косметика</a>
+            <a href="#" class="goods__category-link">Для печени</a>
+            <a href="#" class="goods__category-link">Детокс</a>
+            <a href="#" class="goods__category-link">Для зрения</a>
+          </div>
+          <form class="search-home">
+            <div class="search-home__box">
+              <input type="text" class="search-home__input" placeholder="Введите ключевые слова для поиска">
+            </div>
+            <button class="search-home__btn btn">Искать</button>
+          </form>
+          <div class="goods__close">
+            <div class="goods__close-btn btn">Натуральная косметика</div>
+            <div class="goods__close-btn btn">Натуральная косметика</div>
+            <div class="goods__close-btn btn">Натуральная косметика</div>
+            <div class="goods__close-btn btn">Натуральная косметика</div>
+          </div>
+
+          <div class="goods-block">
+            <div class="goods-block__item">
+              <div class="goods-block__item-img">
+                <img src="./images/home/product-img.jpg" alt="img">
+              </div>
+              <div class="goods-block__item-title">Гепацелин</div>
+              <div class="goods-block__item-text">
+                в качестве биологически активной добавки к пище – источника флавоноидов...
+              </div>
+              <div class="goods-block__center">
+                <div class="goods-block__center-price">1000 ₽</div>
+                <div class="goods-block__center-reviews">2345</div>
+              </div>
+              <div class="goods-block__bottom">
+                <a href="#" class="goods-block__bottom-cart btn">В корзину</a>
+                <button class="goods-block__bottom-buy">Купить</button>
+              </div>
+            </div>
+            <div class="goods-block__item">
+              <div class="goods-block__item-img">
+                <img src="./images/home/product-img.jpg" alt="img">
+              </div>
+              <div class="goods-block__item-title">Гепацелин</div>
+              <div class="goods-block__item-text">
+                в качестве биологически активной добавки к пище – источника флавоноидов...
+              </div>
+              <div class="goods-block__center">
+                <div class="goods-block__center-price">1000 ₽</div>
+                <div class="goods-block__center-reviews">2345</div>
+              </div>
+              <div class="goods-block__bottom">
+                <a href="#" class="goods-block__bottom-cart btn">В корзину</a>
+                <button class="goods-block__bottom-buy">Купить</button>
+              </div>
+            </div>
+            <div class="goods-block__item">
+              <div class="goods-block__item-img">
+                <img src="./images/home/product-img.jpg" alt="img">
+              </div>
+              <div class="goods-block__item-title">Гепацелин</div>
+              <div class="goods-block__item-text">
+                в качестве биологически активной добавки к пище – источника флавоноидов...
+              </div>
+              <div class="goods-block__center">
+                <div class="goods-block__center-price">1000 ₽</div>
+                <div class="goods-block__center-reviews">2345</div>
+              </div>
+              <div class="goods-block__bottom">
+                <a href="#" class="goods-block__bottom-cart btn">В корзину</a>
+                <button class="goods-block__bottom-buy">Купить</button>
+              </div>
+            </div>
+            <div class="goods-block__item">
+              <div class="goods-block__item-img">
+                <img src="./images/home/product-img.jpg" alt="img">
+              </div>
+              <div class="goods-block__item-title">Гепацелин</div>
+              <div class="goods-block__item-text">
+                в качестве биологически активной добавки к пище – источника флавоноидов...
+              </div>
+              <div class="goods-block__center">
+                <div class="goods-block__center-price">1000 ₽</div>
+                <div class="goods-block__center-reviews">2345</div>
+              </div>
+              <div class="goods-block__bottom">
+                <a href="#" class="goods-block__bottom-cart btn">В корзину</a>
+                <button class="goods-block__bottom-buy">Купить</button>
+              </div>
+            </div>
+            <div class="goods-block__item">
+              <div class="goods-block__item-img">
+                <img src="./images/home/product-img.jpg" alt="img">
+              </div>
+              <div class="goods-block__item-title">Гепацелин</div>
+              <div class="goods-block__item-text">
+                в качестве биологически активной добавки к пище – источника флавоноидов...
+              </div>
+              <div class="goods-block__center">
+                <div class="goods-block__center-price">1000 ₽</div>
+                <div class="goods-block__center-reviews">2345</div>
+              </div>
+              <div class="goods-block__bottom">
+                <a href="#" class="goods-block__bottom-cart btn">В корзину</a>
+                <button class="goods-block__bottom-buy">Купить</button>
+              </div>
+            </div>
+            <div class="goods-block__item">
+              <div class="goods-block__item-img">
+                <img src="./images/home/product-img.jpg" alt="img">
+              </div>
+              <div class="goods-block__item-title">Гепацелин</div>
+              <div class="goods-block__item-text">
+                в качестве биологически активной добавки к пище – источника флавоноидов...
+              </div>
+              <div class="goods-block__center">
+                <div class="goods-block__center-price">1000 ₽</div>
+                <div class="goods-block__center-reviews">2345</div>
+              </div>
+              <div class="goods-block__bottom">
+                <a href="#" class="goods-block__bottom-cart btn">В корзину</a>
+                <button class="goods-block__bottom-buy">Купить</button>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="goods__btn btn">Смотреть все товары</a>
+        </div>
+      </section>
+
+      <section class="hit">
+        <div class="container">
+          <h3 class="hit__title">Хит продаж 2018 года!</h3>
+          <div class="hit__subtitle">Хит продаж</div>
+          <div class="hit-block">
+            <div class="hit-block__left">
+              <div class="hit-block__item">
+                <div class="hit-block__item-img">
+                  <img src="./images/home/hits-1.svg" alt="img">
+                </div>
+                <div class="hit-block__item-title">
+                  Укрепляют иммунитет
+                </div>
+                <div class="hit-block__item-text">
+                  Вы перестанете болеть простудными инфекционными заболеваниями, а организм будет работать без сбоев.
+                </div>
+              </div>
+              <div class="hit-block__item">
+                <div class="hit-block__item-img">
+                  <img src="./images/home/hits-2.svg" alt="img">
+                </div>
+                <div class="hit-block__item-title">Не имеют противопоказаний</div>
+                <div class="hit-block__item-text">
+                  Добавки не являются лекарствами. Это оздоравливающее средство, которое можно безопасно применять всем.
+                </div>
+              </div>
+            </div>
+
+            <div class="hit-block__center">
+              <div class="hit-block__center-img">
+                <img src="./images/home/hits-img.png" alt="img">
+              </div>
+              <div class="hit-block__price">
+                <div class="hit-block__price-old">
+                  <span>Полная цена:</span>
+                  3990 руб
+                </div>
+                <div class="hit-block__price-new">
+                  <span>Цена со скидкой:</span>
+                  990 руб
+                </div>
+              </div>
+              <form class="hit-block__form">
+                <div class="hit-block__form-item hit-block__form-item--phone">
+                  <input type="text" class="hit-block__form-input" placeholder="Ваше имя">
+                </div>
+                <div class="hit-block__form-item hit-block__form-item--user">
+                  <input type="text" class="hit-block__form-input" placeholder="Ваш телефон">
+                </div>
+                <buton class="hit-block__form-btn">Заказать со скидкой</buton>
+              </form>
+            </div>
+
+            <div class="hit-block__right">
+              <div class="hit-block__item">
+                <div class="hit-block__item-img">
+                  <img src="./images/home/hits-3.svg" alt="img">
+                </div>
+                <div class="hit-block__item-title">
+                  Выводят паразитов на всех стадиях развития.
+                </div>
+                <div class="hit-block__item-text">
+                  Препараты уничтожают не только взрослых особей, но и яйца. Полностью останавливают жизненный цикл.
+                </div>
+              </div>
+              <div class="hit-block__item">
+                <div class="hit-block__item-img">
+                  <img src="./images/home/hits-4.svg" alt="img">
+                </div>
+                <div class="hit-block__item-title">
+                  Уничтожают вредные микроорганизмы
+                </div>
+                <div class="hit-block__item-text">
+                  Фитодобавки мягко, но эффективно выводят не только паразитов, но и бактерии, грибки, токсины.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <h3 class="reviews__title title">Отзывы постоянных клиентов</h3>
+          <div class="reviews-block">
+            <div class="reviews-block__img">
+              <img src="./images/home/reviews-img.png" alt="img">
+            </div>
+
+            <div class="reviews-slider">
+              <div class="reviews-slider__inner">
+                <div class="reviews-slider__item">
+                  <div class="reviews-slider__wrapper">
+                    <div class="reviews-slider__top">
+                      <div class="reviews-slider__top-name">Ольга</div>
+                      <div class="reviews-slider__top-text">г. Москва, 35 лет</div>
+                    </div>
+                    <div class="reviews-slider__wrapper-text">
+                      Сначала не верила, что природные средства могут быть эффективными, ведь там нет никаких добавок и лекарств. Но на себе проверила эффект.
+                    </div>
+                    <div class="reviews-slider__wrapper-text">
+                      Волосы и ногти стали красивыми, я похудела на 4 кг. Причем ем-то немало, как раньше. Видимо организм очистился и освободился от всех лишних залежей и токсинов.
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews-slider__item">
+                  <div class="reviews-slider__wrapper">
+                    <div class="reviews-slider__top">
+                      <div class="reviews-slider__top-name">Ольга</div>
+                      <div class="reviews-slider__top-text">г. Москва, 35 лет</div>
+                    </div>
+                    <div class="reviews-slider__wrapper-text">
+                      Сначала не верила, что природные средства могут быть эффективными, ведь там нет никаких добавок и лекарств. Но на себе проверила эффект.
+                    </div>
+                    <div class="reviews-slider__wrapper-text">
+                      Волосы и ногти стали красивыми, я похудела на 4 кг. Причем ем-то немало, как раньше. Видимо организм очистился и освободился от всех лишних залежей и токсинов.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="materials">
+        <div class="container">
+          <h3 class="materials__title title">Полезные материалы</h3>
+          <div class="materials-block">
+            <div class="materials-block__left">
+              <div class="materials-block__left-img">
+                <img src="./images/home/materials-images.jpg" alt="img">
+              </div>
+              <div class="materials-block__left-title">Естественный биохакинг</div>
+              <div class="materials-block__left-date">23 Октября 2024</div>
+              <div class="materials-block__left-text">
+                Биохакинг это не про привычное всем нам правильное питание и не просто про ЗОЖ
+              </div>
+              <a href="#" class="materials-block__left-btn">Читать больше</a>
+            </div>
+            <div class="materials-block__right">
+              <div class="materials-block__item">
+                <div class="materials-block__item-img">
+                  <img src="./images/home/materials-img.jpg" alt="img">
+                </div>
+                <div class="materials-block__content">
+                  <div class="materials-block__content-title">Кето - диета</div>
+                  <div class="materials-block__content-date">23 Октября 2024</div>
+                  <div class="materials-block__content-text">
+                    Биохакинг это не про привычное всем нам правильное питание и не просто про ЗОЖ...
+                  </div>
+                  <a href="#" class="materials-block__content-link">Читать больше</a>
+                </div>
+              </div>
+              <div class="materials-block__item">
+                <div class="materials-block__item-img">
+                  <img src="./images/home/materials-img.jpg" alt="img">
+                </div>
+                <div class="materials-block__content">
+                  <div class="materials-block__content-title">Кето - диета</div>
+                  <div class="materials-block__content-date">23 Октября 2024</div>
+                  <div class="materials-block__content-text">
+                    Биохакинг это не про привычное всем нам правильное питание и не просто про ЗОЖ...
+                  </div>
+                  <a href="#" class="materials-block__content-link">Читать больше</a>
+                </div>
+              </div>
+              <div class="materials-block__item">
+                <div class="materials-block__item-img">
+                  <img src="./images/home/materials-img.jpg" alt="img">
+                </div>
+                <div class="materials-block__content">
+                  <div class="materials-block__content-title">Кето - диета</div>
+                  <div class="materials-block__content-date">23 Октября 2024</div>
+                  <div class="materials-block__content-text">
+                    Биохакинг это не про привычное всем нам правильное питание и не просто про ЗОЖ...
+                  </div>
+                  <a href="#" class="materials-block__content-link">Читать больше</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="materials__btn btn">Смотреть все статьи</a>
+        </div>
+      </section>
+
+      <section class="questions">
+        <div class="container">
+            <h4 class="questions-top__title title">Популярные вопросы</h4>
+            
+          <div class="questions-box">
+            <div class="questions-accardion">
+              <div class="questions__wrapper">
+                <div class="questions-accardion__btn">
+                  <span class="questions-accardion__title">
+                    Название вопроса?
+                  </span>
+                  <div class="questions-accardion__circle"></div>
+                </div>
+                <div class="questions-accardion__content">
+                  <div class="questions-accardion__text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas qui excepturi maxime libero temporibus placeat corporis fugit at, doloribus minus quisquam in delectus soluta similique, est natus voluptate esse rem?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="questions__wrapper">
+                <div class="questions-accardion__btn">
+                  <span class="questions-accardion__title">
+                    Название вопроса?
+                  </span>
+                  <div class="questions-accardion__circle"></div>
+                </div>
+                <div class="questions-accardion__content">
+                  <div class="questions-accardion__text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas qui excepturi maxime libero temporibus placeat corporis fugit at, doloribus minus quisquam in delectus soluta similique, est natus voluptate esse rem?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="questions__wrapper">
+                <div class="questions-accardion__btn">
+                  <span class="questions-accardion__title">
+                    Название вопроса?
+                  </span>
+                  <div class="questions-accardion__circle"></div>
+                </div>
+                <div class="questions-accardion__content">
+                  <div class="questions-accardion__text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas qui excepturi maxime libero temporibus placeat corporis fugit at, doloribus minus quisquam in delectus soluta similique, est natus voluptate esse rem?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="questions__wrapper">
+                <div class="questions-accardion__btn">
+                  <span class="questions-accardion__title">
+                    Название вопроса?
+                  </span>
+                  <div class="questions-accardion__circle"></div>
+                </div>
+                <div class="questions-accardion__content">
+                  <div class="questions-accardion__text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas qui excepturi maxime libero temporibus placeat corporis fugit at, doloribus minus quisquam in delectus soluta similique, est natus voluptate esse rem?
+                    </p>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+
+            <div class="questions-top__img">
+              <img src="./images/home/questions-img.jpg" alt="img">
+            </div>
+          </div>
+         
+        </div>
+      </section> 
+
+      <section class="contact" id="contacts">
+        <div class="container">
+          <h3 class="contact__title title">Наши контакты</h3>
+          <div class="contact-block">
+            <div class="contact-block__text">
+              Остались вопросы? Звоните или найдите нас в сообществе:
+            </div>
+            <a href="tel:88008008080" class="contact-block__phone">8 800 800-80-80</a>
+            <div class="contact-block__social">
+              <a href="#" class="contact-block__social-link contact-block__social-link--whatsap">
+                <img src="./images/home/whatsap.svg" alt="img">
+              </a>
+              <a href="#" class="contact-block__social-link contact-block__social-link--tg">
+                <img src="./images/home/tg.svg" alt="img">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-block">
+          <div class="footer-block__left">
+            <a href="#" class="footer-block__left-logo">
+              <img src="./images/home/footer-logo.png" alt="img">
+            </a>
+            <div class="footer-block__left-text">© 2024. Все права защищены.</div>
+          </div>
+
+          <div class="footer-block__center">
+            <ul class="footer-block__menu">
+              <li>
+                <a href="#">Главная</a>
+              </li>
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Блог</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">О нас</a>
+              </li>
+            </ul>
+            <a href="#" class="footer-block__center-text">Политики конфиденциальности</a>
+          </div>
+
+          <div class="footer-block__right">
+            <a href="tel:88005555555" class="footer-block__right-phone">8 800 555-55-55</a>
+            <button class="footer-block__right-btn">Заказать звонок</button>
+            <a href="mailto:www.mail.ru" class="footer-block__right-mail">www.mail.ru</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   
 
 
