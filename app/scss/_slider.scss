@@ -1,0 +1,92 @@
+.reviews-slider__item {
+    overflow: hidden;
+}
+.reviews-slider__wrapper {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 40px 32px 40px 32px;
+    box-shadow: 0 2px 16px 0 rgba(53, 174, 93, 0.24);
+    background-color: #fff;
+    border: 1px solid rgba(53, 174, 93, 0.32);
+    border-radius: 16px;
+}
+.reviews-slider__top {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews-slider__top-name {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #35ae5d;
+}
+.reviews-slider__top-text {
+    font-weight: 500;
+}
+.reviews-slider__wrapper-text {
+    margin-bottom: 24px;
+}
+.reviews-slider__wrapper-img{
+    margin-left: auto;
+}
+.reviews-slider__inner .slick-dots{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    transform: translateY(-5rem);
+}
+.reviews-slider__inner .slick-dots li{
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border: 1px solid rgba(53, 174, 93, 0.4);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.reviews-slider__inner .slick-dots li button{
+    font-size: 0;
+    padding: 0;
+    border: none;
+   
+}
+.reviews-slider__inner .slick-dots li.slick-active{
+    border: 7px solid #35ae5d;
+}
+
+.reviews-slider__inner .slick-prev,
+.reviews-slider__inner .slick-next{
+    font-size: 0;
+    padding: 0;
+    border: none;
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    border: 1px solid #35ae5d;
+    border-radius: 8px;
+    background-color: #fff;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .4s ease-in;
+}
+.reviews-slider__inner .slick-prev{
+    left: 0;
+    background-image: url('../images/home/arrow-left.svg');
+}
+.reviews-slider__inner .slick-next{
+    right: 0;
+    background-image: url('../images/home/arrow-right.svg');
+}
+.reviews-slider__inner .slick-prev:hover{
+    background-color: #35ae5d;
+    background-image: url('../images/home/arrow-left-hover.svg');
+    transition: all .4s ease-in;
+}
+.reviews-slider__inner .slick-next:hover{
+    background-color: #35ae5d;
+    background-image: url('../images/home/arrow-right-hover.svg');
+    transition: all .4s ease-in;
+}

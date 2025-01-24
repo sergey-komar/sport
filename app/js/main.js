@@ -1,5 +1,11 @@
 $(function () {
-    $('.questions-accardion__btn').on('click', function(){
+     $(".reviews-slider__inner").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+      });
+
+      $('.questions-accardion__btn').on('click', function(){
         $(this).next().slideToggle(500); 
      });
 })
@@ -61,5 +67,19 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     setClock('.timer', deadline);
+
+
+
+    // Маска для Инпута
+    var element = document.getElementById('input-mask');
+    var maskOptions = {
+        mask: '+{7}(000)000-00-00'
+    };
+
+    if(element){
+        var mask = IMask(element, maskOptions);
+    }
+    
+   
 
 })
