@@ -23,7 +23,7 @@
                 <a href="#">Каталог</a>
               </li>
               <li>
-                <a href="#">Блог</a>
+                <a href="./news.html">Блог</a>
               </li>
               <li>
                 <a href="#">Доставка</a>
@@ -57,7 +57,7 @@
             </div>
            
             <a href="tel:88005555555" class="header-bottom__info-phone">8 800 555-55-55</a>
-            <div class="header-bottom__info-text">Заказать звонок</div>
+            <div class="header-bottom__info-text btn-modal">Заказать звонок</div>
           </div>
         </div>
       </div>
@@ -508,6 +508,7 @@
         </div>
       </section>
 
+
       <section class="materials">
         <div class="container">
           <h3 class="materials__title title">Полезные материалы</h3>
@@ -522,7 +523,7 @@
                   <div class="materials-block__item-text">
                     Биохакинг это не про привычное всем нам правильное питание и не просто про ЗОЖ
                   </div>
-                  <div class="materials-block__item-btn">Читать больше</div>
+                  <a href="#" class="materials-block__item-btn">Читать больше</a>
                 </div>
               </div>
               <div class="materials-block__item">
@@ -535,7 +536,7 @@
                   <div class="materials-block__item-text">
                     Биохакинг это не про привычное всем нам правильное питание и не просто про ЗОЖ
                   </div>
-                  <div class="materials-block__item-btn">Читать больше</div>
+                  <a href="#" class="materials-block__item-btn">Читать больше</a>
                 </div>
               </div>
               <div class="materials-block__item">
@@ -548,7 +549,7 @@
                   <div class="materials-block__item-text">
                     Биохакинг это не про привычное всем нам правильное питание и не просто про ЗОЖ
                   </div>
-                  <div class="materials-block__item-btn">Читать больше</div>
+                  <a href="#" class="materials-block__item-btn">Читать больше</a>
                 </div>
               </div>
               <div class="materials-block__item">
@@ -561,7 +562,7 @@
                   <div class="materials-block__item-text">
                     Биохакинг это не про привычное всем нам правильное питание и не просто про ЗОЖ
                   </div>
-                  <div class="materials-block__item-btn">Читать больше</div>
+                  <a href="#" class="materials-block__item-btn">Читать больше</a>
                 </div>
               </div>
           </div>
@@ -636,7 +637,21 @@
                   </div>
                 </div>
               </div>
-             
+              <div class="questions__wrapper">
+                <div class="questions-accardion__btn">
+                  <span class="questions-accardion__title">
+                    Название вопроса?
+                  </span>
+                  <div class="questions-accardion__circle"></div>
+                </div>
+                <div class="questions-accardion__content">
+                  <div class="questions-accardion__text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas qui excepturi maxime libero temporibus placeat corporis fugit at, doloribus minus quisquam in delectus soluta similique, est natus voluptate esse rem?
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="questions-top__img">
@@ -686,7 +701,7 @@
                 <a href="#">Каталог</a>
               </li>
               <li>
-                <a href="#">Блог</a>
+                <a href="./news.html">Блог</a>
               </li>
               <li>
                 <a href="#">Доставка</a>
@@ -700,13 +715,25 @@
 
           <div class="footer-block__right">
             <a href="tel:88005555555" class="footer-block__right-phone">8 800 555-55-55</a>
-            <button class="footer-block__right-btn">Заказать звонок</button>
+            <button class="footer-block__right-btn btn-modal">Заказать звонок</button>
             <a href="mailto:www.mail.ru" class="footer-block__right-mail">www.mail.ru</a>
           </div>
         </div>
       </div>
     </footer>
-  
+      <div class="modal">
+          <div class="modal__inner">
+              <div class="modal__inner-block">
+                  <form  class="modal-form">
+                      <input type="text" class="modal-form__input" placeholder="Имя">
+                      <input type="text" class="modal-form__input" id="input-mask1" placeholder="Телефон">
+                      <button class="modal-form__btn">Отправить</button>
+                      <div  class="modal__close">&times;</div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    <div class="btnUp">&uarr;</div>
 
 
   <script src="https://unpkg.com/imask"></script>
