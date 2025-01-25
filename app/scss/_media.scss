@@ -33,7 +33,9 @@
     .about-block__content-text,
     .about-block__desc-title,
     .about__text,
-    .cart-empty__text{
+    .cart-empty__text,
+    .modal-form__input,
+    .modal-form__btn{
         font-size: 16px;
         line-height: 1.4;
     }
@@ -575,5 +577,17 @@
     .footer-block__left-logo{
         width: 170px;
     }
-
+    .modal__inner{
+        padding: 0 10px;
+    }
+    .modal__close{
+        top: -2px;
+        right: 20px;
+    }
+    .modal-form{
+        padding: 30px 20px 10px 20px;
+    }
+    .modal__inner-block-title{
+        font-size: 20px;
+    }
 }
