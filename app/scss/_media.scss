@@ -1,0 +1,118 @@
+@media(max-width: 1400px){
+    html{
+        font-size: 8px;
+    }
+    .offer__subtitle{
+        width: 100%;
+        font-size: 12rem;
+    }
+}
+
+
+@media(max-width: 968px){
+    .offer-block__item{
+        width: calc(100% / 2 - 24px);
+    }
+    .offer-block{
+        justify-content: center;
+    }
+}
+
+
+@media(max-width: 720px){
+    .main{
+        margin-top: 120px;
+    }
+    .heading::before,
+    .heading::after{
+        display: none;
+    }
+    .heading-block{
+        flex-direction: column;
+    }
+    .heading-block__info{
+        max-width: 100%;
+    }
+    .heading-block__img{
+        width: 80%;
+    }
+    .health-block__item{
+        width: calc(100% / 2 - 20px);
+    }
+    .health-block__item-text,
+    .offer-block__item-text{
+        font-size: 16px;
+    }
+    .offer__subtitle{
+        display: none;
+    }
+}
+
+
+
+@media(max-width: 550px){
+    .btn{
+        width: 100%;
+        height: 55px;
+        line-height: 55px;
+        text-transform: none;
+    }
+    .title,
+    .offer__title{
+        margin-bottom: 40px;
+        font-size: 23px;
+        line-height: 1.2;
+    }
+    .offer__title{
+        margin-bottom: 20px;
+    }
+    .title::before{
+        height: 4px;
+        bottom: -10px;
+    }
+    .heading-block__info-title{
+        margin-bottom: 45px;
+        font-size: 27px;
+    }
+    .heading-block__info-title::before{
+        height: 4px;
+        bottom: -10px;
+    }
+    .heading-block__info-btn{
+        width: 100%;
+        height: 55px;
+        line-height: 55px;
+        text-transform: none;
+    }
+    .heading-block__info-text{
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .health{
+        padding-top: 5rem;
+    }
+    .health-block__item-title{
+        font-size: 18px;
+        line-height: 1.2;
+        text-transform: none;
+    }
+    .health-block__item-img{
+        width: 60px;
+        height: 60px;
+    }
+    .health-block__item-img img{
+        width: 30px;
+    }
+    .offer-block__item{
+        width: 100%;
+    }
+    .offer-block{
+        transform: translateY(0);
+    }
+    .offer-block__item-img img{
+        width: 100%;
+    }
+    .offer-block__item-title{
+        font-size: 20px;
+    }
+}

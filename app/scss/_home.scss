@@ -76,6 +76,7 @@
 //.health
 .health{
     padding: 8rem 0;
+    position: relative;
 }
 .health__title {
     margin-bottom: 7rem;
@@ -83,6 +84,7 @@
 .health-block {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
 }
 .health-block__item {
@@ -139,6 +141,7 @@
 .offer-block {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 24px;
     transform: translateY(40px);
 }
