@@ -3,6 +3,15 @@ $(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
+        responsive: [
+            {
+              breakpoint: 720,
+              settings: {
+                arrows: false
+              }
+            },
+           
+          ]
       });
 
       $('.questions-accardion__btn').on('click', function(){

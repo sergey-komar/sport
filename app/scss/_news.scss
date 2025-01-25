@@ -4,6 +4,7 @@
 .breadcrumbs__list {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .breadcrumbs__list li a{
     font-size: 14px;
