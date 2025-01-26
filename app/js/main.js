@@ -140,6 +140,34 @@ window.addEventListener('DOMContentLoaded', () => {
             //УБИРАЕМ ДЁРГАНИЕ МОДАЛЬНОГО ОКНА ПРИ ПОЯВЛЕНИИ
 
 
+        // FILTER
+        const asidePriceNname = document.querySelector('.aside-price__name');
+        const asidePriceFilter = document.querySelector('.aside-price__filter');
+        
+        asidePriceNname.addEventListener('click', () => {
+            asidePriceNname.classList.toggle('arrow-open');
+            asidePriceFilter.classList.toggle('aside-open');
+        })
+
+        // FILTER
+        const asideManufacturerNname = document.querySelector('.aside-manufacturer__name');
+        const asideManufacturerFilter = document.querySelector('.aside-manufacturer__filter');
+        
+        asideManufacturerNname.addEventListener('click', () => {
+            asideManufacturerNname.classList.toggle('arrow-open');
+            asideManufacturerFilter.classList.toggle('aside-open');
+        })
+
+        // FILTER
+        const asideAppointmentNname = document.querySelector('.aside-appointment__name');
+        const asideAppointmentFilter = document.querySelector('.aside-appointment__filter');
+        
+        asideAppointmentNname.addEventListener('click', () => {
+            asideAppointmentNname.classList.toggle('arrow-open');
+            asideAppointmentFilter.classList.toggle('aside-open');
+        })
+
+
 
 
             const deadline = '2025-02-1';

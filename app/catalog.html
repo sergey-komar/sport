@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    
+      <div class="header-top">
+        <div class="container">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li>
+                <a href="./index.html">Главная</a>
+              </li>
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Блог</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Оплата</a>
+              </li>
+              <li>
+                <a href="#">О нас</a>
+              </li>
+              <li>
+                <a  href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="box-mobile">
+            <a href="#" class="logo">
+              <img src="./images/home/header-logo.png" alt="img">
+            </a>
+            <div class="box-mobile__right">
+              <a href="./cart-empty.html" class="header-bottom__info-basket">
+                <img src="./images/home/basket.svg" alt="img" class="header-bottom__info-img">
+                <span class="cart-badge">3</span>
+              </a>
+              <div class="nav-icon">
+                <div class="nav-icon__middle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="header-bottom">
+          <a href="./index.html" class="logo">
+            <img src="./images/home/header-logo.png" alt="img">
+          </a>
+          <div class="header-bottom__info">
+            <div class="header-bottom__cart">
+              <div class="header-bottom__cart-text">Корзина</div>
+              <a href="#" class="header-bottom__info-basket">
+                <img src="./images/home/basket.svg" alt="img" class="header-bottom__info-img">
+                <span class="cart-badge">3</span>
+              </a>
+            </div>
+           
+            <a href="tel:88005555555" class="header-bottom__info-phone">8 800 555-55-55</a>
+            <div class="header-bottom__info-text btn-modal">Заказать звонок</div>
+          </div>
+        </div>
+      </div>
+  </header>
+ 
+   
+  <section class="catalog">
+    <div class="container">
+        <div class="catalog-block">
+            <div class="aside">
+                <div class="aside-box">
+                    <a href="#" class="aside-box__back">Вернуться назад</a>
+
+                    <div class="aside__inner">
+                        <div class="aside-price">
+                            <div class="aside-price__name">Цена, руб.</div>
+                            <div class="aside-price__filter">
+                                <input type="text" class="aside-price__filter-input" placeholder="от 10">
+                                <input type="text" class="aside-price__filter-input" placeholder="до 1000">
+                            </div>
+                        </div>
+    
+                        <div class="aside-availability">
+                            <div class="aside-availability__block">
+                                <div class="aside-availability__block-name">Наличие:</div>
+                                <input type="checkbox" class="aside-availability__block-checkbox">
+                            </div>
+                        </div>
+    
+                        <div class="aside-manufacturer">
+                            <div class="aside-manufacturer__name">Производитель:</div>
+                            <div class="aside-manufacturer__filter">
+                                <label class="aside-manufacturer__label">
+                                    <input type="checkbox" class="aside-manufacturer__filter-input">
+                                    <span class="aside-manufacturer__filter-custom"></span>
+                                    <div class="aside-manufacturer__filter-name">Россия</div>
+                                </label>
+                                <label class="aside-manufacturer__label">
+                                    <input type="checkbox" class="aside-manufacturer__filter-input">
+                                    <span class="aside-manufacturer__filter-custom"></span>
+                                    <div class="aside-manufacturer__filter-name">Беларусь</div>
+                                </label>
+                                <label class="aside-manufacturer__label">
+                                    <input type="checkbox" class="aside-manufacturer__filter-input">
+                                    <span class="aside-manufacturer__filter-custom"></span>
+                                    <div class="aside-manufacturer__filter-name">Китай</div>
+                                </label>
+                                <label class="aside-manufacturer__label">
+                                    <input type="checkbox" class="aside-manufacturer__filter-input">
+                                    <span class="aside-manufacturer__filter-custom"></span>
+                                    <div class="aside-manufacturer__filter-name">Индия</div>
+                                </label>
+                            </div>
+                        </div>
+    
+                        <div class="aside-availability">
+                            <div class="aside-availability__block">
+                                <div class="aside-availability__block-name">Наличие:</div>
+                                <input type="checkbox" class="aside-availability__block-checkbox">
+                            </div>
+                        </div>
+    
+                        <div class="aside-appointment">
+                            <div class="aside-appointment__name">Назначение</div>
+                            <div class="aside-appointment__filter">
+                                <label class="aside-appointment__label">
+                                    <input type="checkbox" class="aside-appointment__filter-input">
+                                    <span class="aside-appointment__filter-custom"></span>
+                                    <div class="aside-appointment__filter-name">Для печени</div>
+                                </label>
+                                <label class="aside-appointment__label">
+                                    <input type="checkbox" class="aside-appointment__filter-input">
+                                    <span class="aside-appointment__filter-custom"></span>
+                                    <div class="aside-appointment__filter-name">Для волос</div>
+                                </label>
+                                <label class="aside-appointment__label">
+                                    <input type="checkbox" class="aside-appointment__filter-input">
+                                    <span class="aside-appointment__filter-custom"></span>
+                                    <div class="aside-appointment__filter-name">Для почек</div>
+                                </label>
+                                <label class="aside-appointment__label">
+                                    <input type="checkbox" class="aside-appointment__filter-input">
+                                    <span class="aside-appointment__filter-custom"></span>
+                                    <div class="aside-appointment__filter-name">Для сердца</div>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="aside__apply btn">Применить</button>
+                    </div>
+                   
+                </div>
+                
+                <button class="aside__clear">Очистить фильтр</button>
+            </div>
+
+            <div class="catalog-box">
+                <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li>
+                                <a href="#">Главная</a>
+                            </li>
+                            <li>
+                                <a href="#">О нас</a>
+                            </li>
+                        </ul>
+                </div>
+                <h1 class="catalog-box__title">Каталог товаров</h1>
+                <div class="catalog-box__top">
+                    <div class="catalog-box__left">
+                        <div class="catalog-box__top-sort">Сортировка:</div>
+                        <div class="catalog-box__top-price">Цена</div>
+                        <div class="catalog-box__top-popular">Популярность</div>
+                        <div class="catalog-box__top-new">Новинка</div>
+                    </div>
+                   
+                    <div class="catalog-box__availability">
+                        <div class="catalog-box__availability-name">Наличие:</div>
+                        <input type="checkbox" class="catalog-box__top-input">
+                    </div>
+                    
+                    <div class="catalog-box__right">
+                        <div class="catalog-box__right-code">Кол. на странице:</div>
+                        <div class="catalog-box__right-number">30</div>
+                        <div class="catalog-box__right-number">60</div>
+                        <div class="catalog-box__right-number">90</div>
+                    </div>
+                </div>
+
+                <div class="catalog-product">
+                    <a href="#" class="catalog-product__item">
+                        <div class="catalog-product__item-img">
+                            <img class="catalog-product__item-img-img" src="./images/catalog/catalog-img.jpg" alt="img">
+                            <div class="catalog-product__item-veiw">
+                                <img src="./images/catalog/mdi_eye.svg" alt="img" class="catalog-product__item-img-veiw">
+                            </div>
+                            <div class="catalog-product__item-heart">
+                                <img src="./images/catalog/wpf_like.svg" alt="img" class="catalog-product__item-img-heart">
+                            </div>
+                        </div>
+
+                        <div class="catalog-product__wrapper">
+                            <div class="catalog-product__item-promotion">Акция</div>
+                            <div class="catalog-product__item-reviews">
+                                <img src="./images/catalog/star.png" alt="img" class="catalog-product__item-reviews-img">
+                                <div class="catalog-product__item-reviews-count">(13 отзывов)</div>
+                            </div>
+                            <div class="catalog-product__item-title">Гепацелин</div>
+                            <div class="catalog-product__item-text">
+                                Один из самых доступных и популярн...
+                            </div>
+    
+                            <div class="catalog-product__box">
+                                <div class="catalog-product__box-stock">Есть в наличии</div>
+                                <div class="catalog-product__box-article">Артикул: 123123</div>
+                            </div>
+                            
+                            <div class="catalog-product__price">
+                                <div class="catalog-product__price-new">10 200 ₽</div>
+                                <div class="catalog-product__price-old">10 200 ₽</div>
+                            </div>
+                        </div>
+                        
+                    </a>
+                    <a href="#" class="catalog-product__item">
+                        <div class="catalog-product__item-img">
+                            <img class="catalog-product__item-img-img" src="./images/catalog/catalog-img.jpg" alt="img">
+                            <div class="catalog-product__item-veiw">
+                                <img src="./images/catalog/mdi_eye.svg" alt="img" class="catalog-product__item-img-veiw">
+                            </div>
+                            <div class="catalog-product__item-heart">
+                                <img src="./images/catalog/wpf_like.svg" alt="img" class="catalog-product__item-img-heart">
+                            </div>
+                        </div>
+
+                        <div class="catalog-product__wrapper">
+                            <div class="catalog-product__item-new">Новинка</div>
+                            <div class="catalog-product__item-reviews">
+                                <img src="./images/catalog/star.png" alt="img" class="catalog-product__item-reviews-img">
+                                <div class="catalog-product__item-reviews-count">(13 отзывов)</div>
+                            </div>
+                            <div class="catalog-product__item-title">Гепацелин</div>
+                            <div class="catalog-product__item-text">
+                                Один из самых доступных и популярн...
+                            </div>
+    
+                            <div class="catalog-product__box">
+                                <div class="catalog-product__box-stock">Есть в наличии</div>
+                                <div class="catalog-product__box-article">Артикул: 123123</div>
+                            </div>
+                            
+                            <div class="catalog-product__price">
+                                <div class="catalog-product__price-new">10 200 ₽</div>
+                                <div class="catalog-product__price-old">10 200 ₽</div>
+                            </div>
+                        </div>
+                        
+                    </a>
+                    <a href="#" class="catalog-product__item">
+                        <div class="catalog-product__item-img">
+                            <img class="catalog-product__item-img-img" src="./images/catalog/catalog-img.jpg" alt="img">
+                            <div class="catalog-product__item-veiw">
+                                <img src="./images/catalog/mdi_eye.svg" alt="img" class="catalog-product__item-img-veiw">
+                            </div>
+                            <div class="catalog-product__item-heart">
+                                <img src="./images/catalog/wpf_like.svg" alt="img" class="catalog-product__item-img-heart">
+                            </div>
+                        </div>
+
+                        <div class="catalog-product__wrapper">
+                            <div class="catalog-product__item-promotion">Акция</div>
+                            <div class="catalog-product__item-reviews">
+                                <img src="./images/catalog/star.png" alt="img" class="catalog-product__item-reviews-img">
+                                <div class="catalog-product__item-reviews-count">(13 отзывов)</div>
+                            </div>
+                            <div class="catalog-product__item-title">Гепацелин</div>
+                            <div class="catalog-product__item-text">
+                                Один из самых доступных и популярн...
+                            </div>
+    
+                            <div class="catalog-product__box">
+                                <div class="catalog-product__box-stock">Есть в наличии</div>
+                                <div class="catalog-product__box-article">Артикул: 123123</div>
+                            </div>
+                            
+                            <div class="catalog-product__price">
+                                <div class="catalog-product__price-new">10 200 ₽</div>
+                                <div class="catalog-product__price-old">10 200 ₽</div>
+                            </div>
+                        </div>
+                        
+                    </a>
+                    <a href="#" class="catalog-product__item">
+                        <div class="catalog-product__item-img">
+                            <img class="catalog-product__item-img-img" src="./images/catalog/catalog-img.jpg" alt="img">
+                            <div class="catalog-product__item-veiw">
+                                <img src="./images/catalog/mdi_eye.svg" alt="img" class="catalog-product__item-img-veiw">
+                            </div>
+                            <div class="catalog-product__item-heart">
+                                <img src="./images/catalog/wpf_like.svg" alt="img" class="catalog-product__item-img-heart">
+                            </div>
+                        </div>
+
+                        <div class="catalog-product__wrapper">
+                            <div class="catalog-product__item-promotion">Акция</div>
+                            <div class="catalog-product__item-reviews">
+                                <img src="./images/catalog/star.png" alt="img" class="catalog-product__item-reviews-img">
+                                <div class="catalog-product__item-reviews-count">(13 отзывов)</div>
+                            </div>
+                            <div class="catalog-product__item-title">Гепацелин</div>
+                            <div class="catalog-product__item-text">
+                                Один из самых доступных и популярн...
+                            </div>
+    
+                            <div class="catalog-product__box">
+                                <div class="catalog-product__box-stock">Есть в наличии</div>
+                                <div class="catalog-product__box-article">Артикул: 123123</div>
+                            </div>
+                            
+                            <div class="catalog-product__price">
+                                <div class="catalog-product__price-new">10 200 ₽</div>
+                                <div class="catalog-product__price-old">10 200 ₽</div>
+                            </div>
+                        </div>
+                        
+                    </a>
+                    <a href="#" class="catalog-product__item">
+                        <div class="catalog-product__item-img">
+                            <img class="catalog-product__item-img-img" src="./images/catalog/catalog-img.jpg" alt="img">
+                            <div class="catalog-product__item-veiw">
+                                <img src="./images/catalog/mdi_eye.svg" alt="img" class="catalog-product__item-img-veiw">
+                            </div>
+                            <div class="catalog-product__item-heart">
+                                <img src="./images/catalog/wpf_like.svg" alt="img" class="catalog-product__item-img-heart">
+                            </div>
+                        </div>
+
+                        <div class="catalog-product__wrapper">
+                            <div class="catalog-product__item-new">Новинка</div>
+                            <div class="catalog-product__item-reviews">
+                                <img src="./images/catalog/star.png" alt="img" class="catalog-product__item-reviews-img">
+                                <div class="catalog-product__item-reviews-count">(13 отзывов)</div>
+                            </div>
+                            <div class="catalog-product__item-title">Гепацелин</div>
+                            <div class="catalog-product__item-text">
+                                Один из самых доступных и популярн...
+                            </div>
+    
+                            <div class="catalog-product__box">
+                                <div class="catalog-product__box-stock">Есть в наличии</div>
+                                <div class="catalog-product__box-article">Артикул: 123123</div>
+                            </div>
+                            
+                            <div class="catalog-product__price">
+                                <div class="catalog-product__price-new">10 200 ₽</div>
+                                <div class="catalog-product__price-old">10 200 ₽</div>
+                            </div>
+                        </div>
+                        
+                    </a>
+                    <a href="#" class="catalog-product__item">
+                        <div class="catalog-product__item-img">
+                            <img class="catalog-product__item-img-img" src="./images/catalog/catalog-img.jpg" alt="img">
+                            <div class="catalog-product__item-veiw">
+                                <img src="./images/catalog/mdi_eye.svg" alt="img" class="catalog-product__item-img-veiw">
+                            </div>
+                            <div class="catalog-product__item-heart">
+                                <img src="./images/catalog/wpf_like.svg" alt="img" class="catalog-product__item-img-heart">
+                            </div>
+                        </div>
+
+                        <div class="catalog-product__wrapper">
+                            <div class="catalog-product__item-promotion">Акция</div>
+                            <div class="catalog-product__item-reviews">
+                                <img src="./images/catalog/star.png" alt="img" class="catalog-product__item-reviews-img">
+                                <div class="catalog-product__item-reviews-count">(13 отзывов)</div>
+                            </div>
+                            <div class="catalog-product__item-title">Гепацелин</div>
+                            <div class="catalog-product__item-text">
+                                Один из самых доступных и популярн...
+                            </div>
+    
+                            <div class="catalog-product__box">
+                                <div class="catalog-product__box-stock">Есть в наличии</div>
+                                <div class="catalog-product__box-article">Артикул: 123123</div>
+                            </div>
+                            
+                            <div class="catalog-product__price">
+                                <div class="catalog-product__price-new">10 200 ₽</div>
+                                <div class="catalog-product__price-old">10 200 ₽</div>
+                            </div>
+                        </div>
+                        
+                    </a>
+                   
+                </div>
+
+                <div class="catalog-pagination">
+                    <a href="#" class="catalog-pagination__link catalog-pagination__link-left">Назад</a>
+                    <ul class="catalog-pagination__list">
+                        <li>
+                            <a class="catalog-pagination__active" href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="catalog-pagination__link catalog-pagination__link-right">Вперед</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+    <section class="contact" id="contacts">
+    <div class="container">
+      <h3 class="contact__title title">Наши контакты</h3>
+      <div class="contact-block">
+        <div class="contact-block__text">
+          Остались вопросы? Звоните или найдите нас в сообществе:
+        </div>
+        <a href="tel:88008008080" class="contact-block__phone">8 800 800-80-80</a>
+        <div class="contact-block__social">
+          <a href="#" class="contact-block__social-link contact-block__social-link--whatsap">
+            <img src="./images/home/whatsap.svg" alt="img">
+          </a>
+          <a href="#" class="contact-block__social-link contact-block__social-link--tg">
+            <img src="./images/home/tg.svg" alt="img">
+          </a>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <div class="footer-block__left">
+          <a href="#" class="footer-block__left-logo">
+            <img src="./images/home/footer-logo.png" alt="img">
+          </a>
+        </div>
+
+        <div class="footer-block__center">
+          <ul class="footer-block__menu">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <a href="./news.html">Блог</a>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">О нас</a>
+            </li>
+          </ul>
+          
+        </div>
+
+        <div class="footer-block__right">
+          <a href="tel:88005555555" class="footer-block__right-phone">8 800 555-55-55</a>
+          <button class="footer-block__right-btn btn-modal">Заказать звонок</button>
+         
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-block__left-text">© 2024. Все права защищены.</div>
+        <a href="#" class="footer-block__center-text">Политики конфиденциальности</a>
+        <a href="mailto:www.mail.ru" class="footer-block__right-mail">www.mail.ru</a>
+      </div>
+    </div>
+  </footer>
+
+    <div class="modal">
+        <div class="modal__inner">
+            <div class="modal__inner-block">
+              
+                <form  class="modal-form">
+                  <div class="modal__inner-block-title">Оставить заявку</div>
+                    <input type="text" class="modal-form__input" placeholder="Имя">
+                    <input type="text" class="modal-form__input" id="input-mask1" placeholder="Телефон">
+                    <button class="modal-form__btn">Отправить</button>
+                    <div  class="modal__close">&times;</div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="btnUp">&uarr;</div>
+
+
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
