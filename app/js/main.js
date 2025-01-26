@@ -13,10 +13,43 @@ $(function () {
            
           ]
       });
+      $('.product-slide__thumb').slick({
+        asNavFor: '.product-slide__big',
+        focusOnSelect: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        draggable: false,
+        vertical: true
+        });
+    
+        $('.product-slide__big').slick({
+          asNavFor: '.product-slide__thumb',
+          draggable: false,
+          arrows: false,
+        });
+    
 
       $('.questions-accardion__btn').on('click', function(){
         $(this).next().slideToggle(500); 
      });
+
+       //qty-btn
+  $(".qty-btn").on("click", function (e) {
+    e.preventDefault();
+    var $button = $(this);
+    var oldValue = $button.parent().find("input").val();
+    if ($button.hasClass("inc")) {
+      var newVal = parseFloat(oldValue) + 1;
+    } else {
+      // Don't allow decrementing below zero
+      if (oldValue > 0) {
+        var newVal = parseFloat(oldValue) - 1;
+      } else {
+        newVal = 0;
+      }
+    }
+    $button.parent().find("input").val(newVal);
+  });
 })
 
 
@@ -144,28 +177,81 @@ window.addEventListener('DOMContentLoaded', () => {
         const asidePriceNname = document.querySelector('.aside-price__name');
         const asidePriceFilter = document.querySelector('.aside-price__filter');
         
-        asidePriceNname.addEventListener('click', () => {
-            asidePriceNname.classList.toggle('arrow-open');
-            asidePriceFilter.classList.toggle('aside-open');
-        })
+        if(asidePriceNname){
+            asidePriceNname.addEventListener('click', () => {
+                asidePriceNname.classList.toggle('arrow-open');
+                asidePriceFilter.classList.toggle('aside-open');
+            })
+        }
+      
 
         // FILTER
         const asideManufacturerNname = document.querySelector('.aside-manufacturer__name');
         const asideManufacturerFilter = document.querySelector('.aside-manufacturer__filter');
         
-        asideManufacturerNname.addEventListener('click', () => {
-            asideManufacturerNname.classList.toggle('arrow-open');
-            asideManufacturerFilter.classList.toggle('aside-open');
-        })
+        if(asideManufacturerNname){
+            asideManufacturerNname.addEventListener('click', () => {
+                asideManufacturerNname.classList.toggle('arrow-open');
+                asideManufacturerFilter.classList.toggle('aside-open');
+            })
+        }
+       
 
         // FILTER
         const asideAppointmentNname = document.querySelector('.aside-appointment__name');
         const asideAppointmentFilter = document.querySelector('.aside-appointment__filter');
         
-        asideAppointmentNname.addEventListener('click', () => {
-            asideAppointmentNname.classList.toggle('arrow-open');
-            asideAppointmentFilter.classList.toggle('aside-open');
-        })
+        if(asideAppointmentNname){
+            asideAppointmentNname.addEventListener('click', () => {
+                asideAppointmentNname.classList.toggle('arrow-open');
+                asideAppointmentFilter.classList.toggle('aside-open');
+            })
+        }
+        
+
+
+
+        const tabsItem = document.querySelector('.tabs__item');
+        const tabsItemBtn = document.querySelectorAll('.tabs__item-btn');
+        const tabsContent = document.querySelectorAll('.tabs__content');
+
+        function tabsHide(){
+            tabsContent.forEach(item => {
+                item.classList.add('tabs-hide');
+                item.classList.remove('tabs-show');
+            });
+
+            tabsItemBtn.forEach(btn =>{
+                btn.classList.remove('tabs-active');
+            })
+        }
+        function tabsShow(i){
+            tabsContent[i].classList.add('tabs-show');
+            tabsContent[i].classList.remove('tabs-hide');
+            tabsItemBtn[i].classList.add('tabs-active');
+        }
+
+        if(tabsItem && tabsContent && tabsItemBtn){
+            tabsItem.addEventListener('click', (e)=>{
+                const target = e.target;
+                
+                if(target && target.classList.contains('tabs__item-btn')){
+                    tabsItemBtn.forEach((item, i)=>{
+                        if(target == item){
+                            tabsHide();
+                            tabsShow(i);
+                        }
+                    
+                    })
+                
+                }
+            })
+    
+            tabsHide();
+            tabsShow(0);
+    
+        }
+       
 
 
 
@@ -199,10 +285,11 @@ window.addEventListener('DOMContentLoaded', () => {
             function setClock(selector, endtime) { //Устанавливаем таймер
         
                 const timer = document.querySelector(selector),
+                
                     days = timer.querySelector("#days"),
                     hours = timer.querySelector('#hours'),
                     minutes = timer.querySelector('#minutes'),
-                    seconds = timer.querySelector('#seconds'),
+                    seconds = timer.querySelector('#seconds')
         
         
                     
@@ -213,7 +300,10 @@ window.addEventListener('DOMContentLoaded', () => {
                 function updateClock() { //Обновляем каждую секунду
                     const t = getTimeRemaining(endtime);
         
+                   if(days){
                     days.innerHTML = getZero(t.days);
+                   }
+                   
                     hours.innerHTML = getZero(t.hours);
                     minutes.innerHTML = getZero(t.minutes);
                     seconds.innerHTML = getZero(t.seconds);
@@ -223,8 +313,12 @@ window.addEventListener('DOMContentLoaded', () => {
                     }
                 }
             }
-          
+        
             setClock('.timer', deadline);
+        
+            
+          
+           
         
                 
 

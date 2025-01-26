@@ -90,3 +90,22 @@
     background-image: url('../images/home/arrow-right-hover.svg');
     transition: all .4s ease-in;
 }
+
+
+.product-one__slide .slick-prev,
+.product-one__slide .slick-next {
+    font-size: 0;
+    padding: 0;
+    border: none;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 37%;
+    transform: translateX(-50%);
+}
+.product-one__slide .slick-prev{
+    background: url('../images/product/arrow-top.svg') no-repeat;
+}
+.product-one__slide .slick-next{
+    background: url('../images/product/arrow-down.svg') no-repeat;
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    
+      <div class="header-top">
+        <div class="container">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li>
+                <a href="./index.html">Главная</a>
+              </li>
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Блог</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Оплата</a>
+              </li>
+              <li>
+                <a href="#">О нас</a>
+              </li>
+              <li>
+                <a  href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="box-mobile">
+            <a href="#" class="logo">
+              <img src="./images/home/header-logo.png" alt="img">
+            </a>
+            <div class="box-mobile__right">
+              <a href="./cart-empty.html" class="header-bottom__info-basket">
+                <img src="./images/home/basket.svg" alt="img" class="header-bottom__info-img">
+                <span class="cart-badge">3</span>
+              </a>
+              <div class="nav-icon">
+                <div class="nav-icon__middle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="header-bottom">
+          <a href="./index.html" class="logo">
+            <img src="./images/home/header-logo.png" alt="img">
+          </a>
+          <div class="header-bottom__info">
+            <div class="header-bottom__cart">
+              <div class="header-bottom__cart-text">Корзина</div>
+              <a href="#" class="header-bottom__info-basket">
+                <img src="./images/home/basket.svg" alt="img" class="header-bottom__info-img">
+                <span class="cart-badge">3</span>
+              </a>
+            </div>
+           
+            <a href="tel:88005555555" class="header-bottom__info-phone">8 800 555-55-55</a>
+            <div class="header-bottom__info-text btn-modal">Заказать звонок</div>
+          </div>
+        </div>
+      </div>
+  </header>
+ 
+   
+  <main class="main">
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="./cart-empty.html">Корзина</a>
+                </li>
+               
+            </ul>
+        </div>
+        
+    </div>
+
+   
+
+    <section class="cart">
+        <div class="container">
+            <h1 class="cart__title title">Оформление заказа</h1>
+            <div class="cart-block">
+                <div class="cart-block__left">
+                    <div class="cart-block__left-title">Товаров в заказе</div>
+
+                    <div class="cart-block__item">
+                        <div class="cart-block__item-img">
+                            <img src="./images/cart/cart-img.jpg" alt="img">
+                        </div>
+                        <div class="cart-block__item-title">
+                            Гепацелин
+                            <span>Артикул: 123123123</span>
+                        </div>
+                        <div class="cart-block__item-things">1 шт.</div>
+                        <div class="cart-block__item-quantity">
+                            <div class="pro-qty">
+                                <a href="#" class="dec qty-btn">
+                                    <img src="./images/product/Minus.svg" alt="img">
+                                </a>
+                                <input type="text" class="quantity" value="1"/>
+                                <a href="#" class="inc qty-btn">
+                                    <img src="./images/product/plus 1.svg" alt="img">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="cart-block__item-price">2500 ₽</div>
+                        <a href="#" class="cart-block__item-remove">
+                            <img src="./images/cart/cart-remove.svg" alt="img">
+                        </a>
+                        
+                    </div>
+                    <div class="cart-block__item">
+                        <div class="cart-block__item-img">
+                            <img src="./images/cart/cart-img.jpg" alt="img">
+                        </div>
+                        <div class="cart-block__item-title">
+                            Гепацелин
+                            <span>Артикул: 123123123</span>
+                        </div>
+                        <div class="cart-block__item-things">1 шт.</div>
+                        <div class="cart-block__item-quantity">
+                            <div class="pro-qty">
+                                <a href="#" class="dec qty-btn">
+                                    <img src="./images/product/Minus.svg" alt="img">
+                                </a>
+                                <input type="text" class="quantity" value="1"/>
+                                <a href="#" class="inc qty-btn">
+                                    <img src="./images/product/plus 1.svg" alt="img">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="cart-block__item-price">2500 ₽</div>
+                        <a href="#" class="cart-block__item-remove">
+                            <img src="./images/cart/cart-remove.svg" alt="img">
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <div class="cart-block__right">
+                    <div class="cart-block__total">
+                        <div class="cart-block__total-title">Итого</div>
+                        <div class="cart-block__total-price">
+                            2 товара на сумму:
+                            <span>5000 ₽</span>
+                        </div>
+                        <div class="cart-block__total-product">
+                            Стоимость доставки:
+                            <span>1500 ₽</span>
+                        </div>
+                        <div class="cart-block__total-promocode">Введите промокод</div>
+                        <div class="cart-block__total-apply">Применить</div>
+                        <div class="cart-block__total-sale">
+                            Скидка:
+                            <span>0 ₽</span>
+                        </div>
+                        <div class="cart-block__total-payment">
+                            К оплате:
+                            <span>6500 ₽</span>
+                        </div>
+                        <a href="#" class="cart-block__total-btn btn">Оформить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="order">
+        <div class="container">
+            <div class="order-title">Данные покупателя</div>
+            <div class="order-block">
+                <div class="order-block__item">
+                    <span>ФИО</span>
+                    <input class="order-block__item-input" type="text" placeholder="1234">
+                </div>
+                <div class="order-block__item">
+                    <span>Телефон</span>
+                    <input class="order-block__item-input" type="text" placeholder="1234">
+                </div>
+                <div class="order-block__item">
+                    <span>Город, микрорайон, улица</span>
+                    <input class="order-block__item-input" type="text" placeholder="1234">
+                </div>
+                <div class="order-block__item">
+                    <span>Дом</span>
+                    <input class="order-block__item-input" type="text" placeholder="1234">
+                </div>
+                <div class="order-block__item">
+                    <span>Квартира</span>
+                    <input class="order-block__item-input" type="text" placeholder="1234">
+                </div>
+                <div class="order-block__item">
+                    <span>Подъезд</span>
+                    <input class="order-block__item-input" type="text" placeholder="1234">
+                </div>
+                <div class="order-block__item">
+                    <span>Этаж</span>
+                    <input class="order-block__item-input" type="text" placeholder="1234">
+                </div>
+                <div class="order-block__item">
+                    <span>Комментарии к заказу:</span>
+                    <textarea class="order-block__texarea" placeholder="1234"></textarea>
+                </div>
+                
+
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="delivery-box">
+        <div class="container">
+            <div class="delivery-box__title">Доставка</div>
+
+            <div class="delivery-courier">
+                <div class="delivery-courier__left">
+                    <label class="delivery-courier__label">
+                        <div class="delivery-courier__label-text">Москва и МО:</div>
+                        <input type="checkbox" class="delivery-courier__label-input">
+                        <span class="delivery-courier__label-custom"></span>
+                    </label>
+                    <label class="delivery-courier__label">
+                        <div class="delivery-courier__label-text">Регионы России:</div>
+                        <input type="checkbox" class="delivery-courier__label-input">
+                        <span class="delivery-courier__label-custom"></span>
+                    </label>
+                </div>
+                <div class="delivery-courier__right">
+                    <div class="delivery-courier__right-title">Доставка курьером до двери</div>
+                    <div class="delivery-courier__right-price">
+                        Стоимость:
+                        <span>2500 ₽</span>
+                    </div>
+                    <div class="delivery-courier__right-day">
+                        Срок доставки:
+                        <span>от 8 до 9 дней</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="payment">
+        <div class="container">
+            <div class="payment__title">Оплата</div>
+           <div class="payment-block">
+                <div class="payment-block__left">
+                    <label class="payment-block__label">
+                       <div class="payment-block__label-img">
+                        <img src="./images/cart/kassa.png" alt="img">
+                       </div>
+                        <input class="payment-block__label-input" type="checkbox">
+                        <span class="payment-block__label-custom"></span>
+                    </label>
+                    <label class="payment-block__label">
+                       <div class="payment-block__label-text">
+                        Картой курьеру при получении
+                       </div>
+                        <input class="payment-block__label-input" type="checkbox">
+                        <span class="payment-block__label-custom"></span>
+                    </label>
+                    <label class="payment-block__label">
+                       <div class="payment-block__label-text">
+                        Наличными курьеру
+                       </div>
+                        <input class="payment-block__label-input" type="checkbox">
+                        <span class="payment-block__label-custom"></span>
+                    </label>
+                </div>
+
+                <div class="payment-block__right">
+                    <div class="payment-block__right-title">Доставка курьером</div>
+                    <img src="./images/cart/kassa.png" alt="img" class="payment-block__right-img">
+                    <div class="payment-block__right-text">
+                        ЮKassa — сервис, который позволяет включить приём платежей на сайте и получать деньги на расчётный счёт компании. Комиссия берётся с успешных платежей.
+                    </div>
+                    <div class="payment-block__right-text">
+                        Способы приёма платежей: банковские карты, ЮMoney и QIWI, интернет-банки, наличные, баланс мобильного и другие.
+                    </div>
+                </div>
+           </div> 
+
+           <div class="payment__text">С какой суммы подготовить сдачу?</div>
+
+           <div class="payment-bottom">
+                <a href="#" class="payment-bottom__btn btn">Перейти к оплате</a>
+                <label class="payment-bottom__label">
+                    <input type="checkbox" class="payment-bottom__label-input">
+                    <span class="payment-bottom__label-custom"></span>
+                    <div class="payment-bottom__label-text">
+                        Я ознакомлен с <a href="#">Политикой конфиденциальности</a> и согласен на обработку персональных данных
+                    </div>
+                </label>
+           </div>
+        </div>
+    </div>
+
+    <section class="contact contact-news--page" id="contacts">
+        <div class="container">
+          <h3 class="contact__title title">Наши контакты</h3>
+          <div class="contact-block">
+            <div class="contact-block__text">
+              Остались вопросы? Звоните или найдите нас в сообществе:
+            </div>
+            <a href="tel:88008008080" class="contact-block__phone">8 800 800-80-80</a>
+            <div class="contact-block__social">
+              <a href="#" class="contact-block__social-link contact-block__social-link--whatsap">
+                <img src="./images/home/whatsap.svg" alt="img">
+              </a>
+              <a href="#" class="contact-block__social-link contact-block__social-link--tg">
+                <img src="./images/home/tg.svg" alt="img">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <div class="footer-block__left">
+          <a href="#" class="footer-block__left-logo">
+            <img src="./images/home/footer-logo.png" alt="img">
+          </a>
+        </div>
+
+        <div class="footer-block__center">
+          <ul class="footer-block__menu">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <a href="./news.html">Блог</a>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">О нас</a>
+            </li>
+          </ul>
+          
+        </div>
+
+        <div class="footer-block__right">
+          <a href="tel:88005555555" class="footer-block__right-phone">8 800 555-55-55</a>
+          <button class="footer-block__right-btn btn-modal">Заказать звонок</button>
+         
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-block__left-text">© 2024. Все права защищены.</div>
+        <a href="#" class="footer-block__center-text">Политики конфиденциальности</a>
+        <a href="mailto:www.mail.ru" class="footer-block__right-mail">www.mail.ru</a>
+      </div>
+    </div>
+  </footer>
+
+    <div class="modal">
+        <div class="modal__inner">
+            <div class="modal__inner-block">
+             
+                <form  class="modal-form">
+                  <div class="modal__inner-block-title">Оставить заявку</div>
+                    <input type="text" class="modal-form__input" placeholder="Имя">
+                    <input type="text" class="modal-form__input" id="input-mask1" placeholder="Телефон">
+                    <button class="modal-form__btn">Отправить</button>
+                    <div  class="modal__close">&times;</div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="btnUp">&uarr;</div>
+
+
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
