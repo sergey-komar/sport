@@ -19,7 +19,17 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         draggable: false,
-        vertical: true
+        vertical: true,
+        responsive: [
+            {
+              breakpoint: 720,
+              settings: {
+                vertical: false,
+                arrows: false
+              }
+            },
+           
+          ]
         });
     
         $('.product-slide__big').slick({
